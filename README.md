@@ -1,4 +1,4 @@
-# Deep Learning Flower Identifier
+# Flower Classifier Deep Learning
 
 PyTorch implementation of a Deep learning network to identify 102 different types of flowers (developed for the PyTorch Scholarship Challenge).
 
