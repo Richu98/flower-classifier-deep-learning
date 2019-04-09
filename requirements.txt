@@ -1,0 +1,6 @@
+torchvision
+matplotlib
+numpy
+seaborn
+torch
+google_images_download
