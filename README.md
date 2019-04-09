@@ -76,37 +76,6 @@ You can also use the function to calculate the model's performance on a custom d
     """
 
 
-# PUBLISH THE MODEL RESULTS
-
-For collaborative purposes you can publish the results of your model online, along with a series of (optional) information on your model's structure.
-
-The public results are visible here: https://airtable.com/shrCs1LDFdBus0tMG
-
-To publish the results you can simply call the method publish_evaluated_model
-
-    from test_model_pytorch_facebook_challenge import publish_evaluated_model
-    publish_evaluated_model(model, input_image_size=224,  username="@Slack.Username", model_name="VGG19", optim="Adam",
-                            criteria="NLLLoss", scheduler="StepLR", epoch=10)
-
-# PUBLISH YOUR MODEL RESULTS
-
-### From colab / notebook
-
-Add this code cell
-
-    !git clone https://github.com/GabrielePicco/deep-learning-flower-identifier
-    !pip install requests
-    !pip install airtable
-    import sys
-    sys.path.insert(0, 'deep-learning-flower-identifier')
-
-    from test_model_pytorch_facebook_challenge import publish_evaluated_model
-
-    model = load_your_model('classifier.pth')
-
-    publish_evaluated_model(model, input_image_size=224,  username="@Slack.Username", model_name="VGG19", optim="Adam",
-                        criteria="NLLLoss", scheduler="StepLR", epoch=10)
-
 ### From local machine
 
 
